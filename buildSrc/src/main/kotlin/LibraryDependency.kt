@@ -23,6 +23,7 @@ object LibraryVersion {
     const val flowBindingsVersion = "0.12.0"
     const val circleImageView = "3.1.0"
     const val pagingVersion = "2.1.2"
+    const val paging3Version = "3.0.0-alpha03"
     const val coilVersion = "0.11.0"
     //const val glideVersion = "4.11.0"
 
@@ -58,7 +59,7 @@ object CoreDependency {
     const val moshiAdapters = "com.squareup.moshi:moshi-adapters:${LibraryVersion.moshiVersion}"
     const val coroutinesCore = "org.jetbrains.kotlinx:kotlinx-coroutines-core:${LibraryVersion.coroutinesVersion}"
     const val coroutinesAndroid = "org.jetbrains.kotlinx:kotlinx-coroutines-android:${LibraryVersion.coroutinesVersion}"
-    const val listPageAdapter = "androidx.paging:paging-runtime-ktx:${LibraryVersion.pagingVersion}"
+    const val listPageAdapter = "androidx.paging:paging-runtime-ktx:${LibraryVersion.paging3Version}"
 
     fun getAll() = CoreDependency::class.memberProperties
         .filter { it.isConst }
